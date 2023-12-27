@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 
 const user_routes = require("./routes/user");
 app.get("/", (req, res) => {
-    res.send("Hii");
+    res.send("Welcome to the Dev-Sync-API");
 
 });
 
