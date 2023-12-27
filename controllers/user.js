@@ -6,7 +6,7 @@ const getAllusers = async(req, res) => {
 };
 
 const getAllusersTesting = async(req, res) => {
-    const myData = await User.find({});
+    const myData = await User.find(req.query);
     res.status(200).json({ myData });
 
 };
