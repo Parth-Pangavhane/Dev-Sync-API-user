@@ -1,10 +1,13 @@
+const User = require("../models/user");
 const getAllusers = async(req, res) => {
-    res.status(200).json({ msg: "I am getALLuserS" });
+    const myData = await User.find({});
+    res.status(200).json({ myData });
 
 };
 
 const getAllusersTesting = async(req, res) => {
-    res.status(200).json({ msg: "I am getALLuserSTESTING" });
+    const myData = await User.find({});
+    res.status(200).json({ myData });
 
 };
 
